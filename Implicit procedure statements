@@ -1,0 +1,17 @@
+Implicit statement results  – learn how to return one or more result sets from a procedure.
+
+
+set serveroutput on;
+create or replace procedure proc5 findmax(x in number,y in number,z out number) is
+begin
+    if x<y
+    then 
+    z:=x;
+    else
+    z:=y;
+    end if;
+end;
+
+begin
+proc5(12,20,z);
+end;
